@@ -1,10 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 NoteFlow Frontend
+
+A **Google Keep–style notes app** built using **Next.js**, **TypeScript**, and **Tailwind CSS**, with linting, formatting, and CI/CD integration.  
+This repository contains the **frontend** for the NoteFlow project. The backend (Express + MongoDB) is in a separate repository.
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js (TypeScript)
+- **Styling:** Tailwind CSS
+- **Linting & Formatting:** ESLint + Prettier
+- **Version Control:** Git & GitHub
+- **CI/CD:** GitHub Actions
+- **Code Quality:** SonarQube (Planned)
+
+---
+
+## 🏗️ Project Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/sai2yeshwanth/noteflow-frontend.git
+cd noteflow-frontend
 
 ## Getting Started
 
 First, run the development server:
-
-```bash
 npm run dev
 # or
 yarn dev
@@ -14,23 +35,47 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧩 Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+src/
+ 
+ ├── components/    # Reusable UI components
+ 
+ ├── pages/         # Next.js pages
+ 
+ ├── hooks/         # Custom React hooks
+ 
+ ├── services/      # API calls and external integrations
+ 
+ ├── utils/         # Helper functions
+ 
+ ├── styles/        # Global styles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧹 Code Quality
 
-## Learn More
+To check linting and formatting:
+```bash
+npm run lint
+npm run format
+```
+Prettier will auto-format your code, and unused imports will be removed on save (via VS Code settings).
 
-To learn more about Next.js, take a look at the following resources:
+⚙️ Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a .env.local file and include:
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧪 Testing (Coming Soon)
 
-## Deploy on Vercel
+Unit testing with Jest + React Testing Library
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Integration testing setup planned
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+
+This project is licensed under the MIT License.
+
+🔗 Related Repositories
+
+Backend: NoteFlow Backend
+
